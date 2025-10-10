@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom animations for hero section */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  33% { 
+    transform: translateY(-20px) rotate(1deg); 
+  }
+  66% { 
+    transform: translateY(-10px) rotate(-1deg); 
+  }
+}
+
+@keyframes sparkle {
+  from { 
+    transform: translateY(0); 
+  }
+  to { 
+    transform: translateY(-100px); 
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.sparkle-animation {
+  animation: sparkle 8s linear infinite;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Ensure mobile menu doesn't overflow */
+  .mobile-menu-container {
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  
+  /* Better spacing for mobile */
+  .mobile-section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  /* Touch-friendly buttons */
+  .mobile-touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
