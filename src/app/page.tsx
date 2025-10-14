@@ -22,24 +22,24 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                BILLION STARS
+              <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-green-400 to-red-600 bg-clip-text text-transparent">
+                BSIS
               </h1>
             </div>
             
             {/* Desktop Menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <Link href="#artists" className="hover:text-purple-400 transition-colors">
+                <Link href="#artists" className="hover:text-green-400 transition-colors">
                   Artists
                 </Link>
-                <Link href="#music" className="hover:text-purple-400 transition-colors">
+                <Link href="#music" className="hover:text-green-400 transition-colors">
                   Music
                 </Link>
-                <Link href="#producers" className="hover:text-purple-400 transition-colors">
+                <Link href="#producers" className="hover:text-green-400 transition-colors">
                   Producers
                 </Link>
-                <Link href="#about" className="hover:text-purple-400 transition-colors">
+                <Link href="#about" className="hover:text-green-400 transition-colors">
                   About
                 </Link>
               </div>
@@ -68,28 +68,28 @@ export default function Home() {
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 backdrop-blur-md rounded-lg mt-2">
               <Link 
                 href="#artists" 
-                className="block px-3 py-2 text-base font-medium hover:text-purple-400 hover:bg-gray-800/50 rounded-md transition-colors"
+                className="block px-3 py-2 text-base font-medium hover:text-green-400 hover:bg-gray-800/50 rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 Artists
               </Link>
               <Link 
                 href="#music" 
-                className="block px-3 py-2 text-base font-medium hover:text-purple-400 hover:bg-gray-800/50 rounded-md transition-colors"
+                className="block px-3 py-2 text-base font-medium hover:text-green-400 hover:bg-gray-800/50 rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 Music
               </Link>
               <Link 
                 href="#producers" 
-                className="block px-3 py-2 text-base font-medium hover:text-purple-400 hover:bg-gray-800/50 rounded-md transition-colors"
+                className="block px-3 py-2 text-base font-medium hover:text-green-400 hover:bg-gray-800/50 rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 Producers
               </Link>
               <Link 
                 href="#about" 
-                className="block px-3 py-2 text-base font-medium hover:text-purple-400 hover:bg-gray-800/50 rounded-md transition-colors"
+                className="block px-3 py-2 text-base font-medium hover:text-green-400 hover:bg-gray-800/50 rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 About
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
         
         {/* Animated Fallback Background (in case YouTube doesn't load) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-black opacity-80">
+        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-red-900 to-black opacity-80">
           <div className="absolute inset-0 animate-pulse" style={{
             background: `
               radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
@@ -159,100 +159,95 @@ export default function Home() {
               Show All
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
-            {/* Top Row */}
-            <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  SN
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {/* Featured Artist - S.N.U.P.Y C */}
+            <Link href="/artists/snupy-c" className="relative group cursor-pointer col-span-1 sm:col-span-2 lg:col-span-1">
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-500 to-teal-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+                <div className="w-full h-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+                  SC
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Stella Nova</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-3 sm:p-4">
+                  <h3 className="text-white font-bold text-base sm:text-lg">S.N.U.P.Y C</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Hip-Hop Artist</p>
                 </div>
-              </div>
-            </div>
-            <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  CR
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Cosmic Ray</h3>
+                <div className="absolute top-2 right-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-xs font-bold">
+                  FEATURED
                 </div>
               </div>
-            </div>
-            <div className="relative group cursor-pointer col-span-2 sm:col-span-1">
-              <div className="aspect-[4/3] bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg overflow-hidden">
+            </Link>
+
+            {/* Future Artist Slots - Commented for Scalability */}
+            {/* Uncomment and customize these slots when new artists are signed */}
+            
+            {/* 
+            <Link href="/artists/artist-2" className="relative group cursor-pointer">
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-500 to-green-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  SF
+                  A2
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Solar Flare</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 sm:p-3">
+                  <h3 className="text-white font-bold text-sm sm:text-base">Artist Name</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Genre</p>
                 </div>
               </div>
-            </div>
-            {/* Second Row */}
-            <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-green-500 to-blue-500 rounded-lg overflow-hidden">
+            </Link>
+            */}
+            
+            {/* 
+            <Link href="/artists/artist-3" className="relative group cursor-pointer">
+              <div className="aspect-[4/3] bg-gradient-to-br from-indigo-500 to-green-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  LE
+                  A3
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Luna Eclipse</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 sm:p-3">
+                  <h3 className="text-white font-bold text-sm sm:text-base">Artist Name</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Genre</p>
                 </div>
               </div>
-            </div>
-            <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-teal-500 to-blue-500 rounded-lg overflow-hidden">
+            </Link>
+            */}
+            
+            {/* 
+            <Link href="/artists/artist-4" className="relative group cursor-pointer">
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-500 to-blue-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  GD
+                  A4
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Galaxy Dreams</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 sm:p-3">
+                  <h3 className="text-white font-bold text-sm sm:text-base">Artist Name</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Genre</p>
                 </div>
               </div>
-            </div>
-            <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-red-500 to-pink-500 rounded-lg overflow-hidden">
+            </Link>
+            */}
+            
+            {/* 
+            <Link href="/artists/artist-5" className="relative group cursor-pointer">
+              <div className="aspect-[4/3] bg-gradient-to-br from-teal-500 to-blue-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  NS
+                  A5
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Nebula Storm</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 sm:p-3">
+                  <h3 className="text-white font-bold text-sm sm:text-base">Artist Name</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Genre</p>
                 </div>
               </div>
-            </div>
-            {/* Third Row - Hidden on mobile, shown on larger screens */}
-            <div className="relative group cursor-pointer hidden sm:block">
-              <div className="aspect-[4/3] bg-gradient-to-br from-orange-500 to-red-500 rounded-lg overflow-hidden">
+            </Link>
+            */}
+            
+            {/* 
+            <Link href="/artists/artist-6" className="relative group cursor-pointer">
+              <div className="aspect-[4/3] bg-gradient-to-br from-red-500 to-pink-500 rounded-lg overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  AP
+                  A6
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Astro Phoenix</h3>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-2 sm:p-3">
+                  <h3 className="text-white font-bold text-sm sm:text-base">Artist Name</h3>
+                  <p className="text-gray-300 text-xs sm:text-sm">Genre</p>
                 </div>
               </div>
-            </div>
-            <div className="relative group cursor-pointer hidden sm:block">
-              <div className="aspect-[4/3] bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  MM
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Meteor Muse</h3>
-                </div>
-              </div>
-            </div>
-            <div className="relative group cursor-pointer hidden sm:block">
-              <div className="aspect-[4/3] bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  VS
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-2 sm:p-3">
-                  <h3 className="text-white font-bold text-sm sm:text-base">Void Seeker</h3>
-                </div>
-              </div>
-            </div>
+            </Link>
+            */}
           </div>
         </div>
       </section>
@@ -263,7 +258,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-white">new music</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             <div className="group cursor-pointer">
-              <div className="aspect-square bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-green-500 to-teal-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl font-bold text-white">
                   ★
                 </div>
@@ -275,7 +270,7 @@ export default function Home() {
               <p className="text-gray-400 text-xs sm:text-sm">Stella Nova</p>
             </div>
             <div className="group cursor-pointer">
-              <div className="aspect-square bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-blue-500 to-green-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl font-bold text-white">
                   ◊
                 </div>
@@ -287,7 +282,7 @@ export default function Home() {
               <p className="text-gray-400 text-xs sm:text-sm">Cosmic Ray</p>
             </div>
             <div className="group cursor-pointer">
-              <div className="aspect-square bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-indigo-500 to-green-500 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-2xl sm:text-3xl font-bold text-white">
                   ●
                 </div>
@@ -331,7 +326,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg overflow-hidden">
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-500 to-teal-500 rounded-lg overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-3xl font-bold text-white">
                   CS
                 </div>
@@ -372,7 +367,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative group cursor-pointer">
-              <div className="aspect-[4/3] bg-gradient-to-br from-pink-500 to-purple-500 rounded-lg overflow-hidden">
+              <div className="aspect-[4/3] bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-3xl font-bold text-white">
                   AA
                 </div>
@@ -439,21 +434,21 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-gray-600 bg-clip-text text-transparent mb-4">
                 BILLION STARS
               </h3>
               <p className="text-gray-400 mb-6">Where music meets the cosmos</p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                   <Twitter className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                   <Youtube className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                   <Facebook className="h-6 w-6" />
                 </a>
               </div>
@@ -461,8 +456,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="#about" className="hover:text-purple-400 transition-colors">About Us</Link></li>
-                <li><Link href="#careers" className="hover:text-purple-400 transition-colors">Careers</Link></li>
+                <li><Link href="#about" className="hover:text-green-400 transition-colors">About Us</Link></li>
+                <li><Link href="#careers" className="hover:text-green-400 transition-colors">Careers</Link></li>
                 <li><Link href="#contact" className="hover:text-purple-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
