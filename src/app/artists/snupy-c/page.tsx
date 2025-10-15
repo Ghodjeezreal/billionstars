@@ -571,12 +571,16 @@ export default function SnupyC() {
                 <div>
                   <h3 className="text-xl font-bold mb-4 text-green-400">Biography</h3>
                   <p className="text-gray-300 mb-4">
-                    S.N.U.P.Y C represents the new wave of hip-hop artistry, combining traditional rap techniques with modern production styles. 
-                    As the flagship artist of Billion Stars Records, S.N.U.P.Y C embodies the label&apos;s commitment to nurturing authentic talent.
+                    Snupy Chukz (born Chukwudi Augustine Omoruyi) is a Nigerian artist, songwriter, and creative visionary dedicated to uplifting people through music and culture. Growing up in a musically gifted family in Benin City, Edo State, and later Lagos, he honed his craft through church choirs, freestyle sessions, and live performances before establishing himself as an independent artist under his label, Billion Stars Integrated Solutions Ltd.
+
+His sound blends Afrobeat, Afropop, Reggae, Dancehall, R&B, and World music, creating a universal rhythm that connects across cultures.
                   </p>
                   <p className="text-gray-300">
-                    With a unique sound that blends introspective lyrics with hard-hitting beats, S.N.U.P.Y C is set to make a significant 
-                    impact on the music industry. Stay tuned for upcoming releases and performances.
+                   With his debut single “The Way You Are”, a self-love anthem, and his follow-up “Understanding”, a global peace song, Snupy Chukz positions his art as more than entertainment he sees it as a movement for unity, healing, and inspiration.
+
+Beyond music, he is building the SNUPY lifestyle brand, a cultural fraternity and health-conscious movement promoting authenticity and unstoppable energy. His vision is global: to show that African creativity can lead conversations on love, identity, and togetherness, while inspiring the world to dance, reflect, and connect.
+
+Snupy Chukz is not just making songs he is shaping a legacy where African voices meet the world stage with power, purpose, and joy
                   </p>
                 </div>
                 <div>
